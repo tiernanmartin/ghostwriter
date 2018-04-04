@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "/"
 title = "Ghostwriter example"
 theme = "ghostwriter"
 languageCode = "en-us"
@@ -34,7 +34,7 @@ googleAnalytics = "XXX"
     highlightJsLocalUrl = ""
 
 [Permalinks]
-    post = "/:year/:month/:day/:filename/"
+    post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "Blog"
