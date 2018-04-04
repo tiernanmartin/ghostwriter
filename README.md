@@ -1,8 +1,30 @@
-# Ghostwriter
+# Ghostwriter (Revised)
 
-Enhanced port of the Ghost "[ghostwriter](https://github.com/roryg/ghostwriter)" theme to the [Hugo](https://gohugo.io) site generator.
+This is a Hugo/blogdown port of the "[ghostwriter](https://github.com/roryg/ghostwriter)" theme.
 
-## Installation
+It is a lightly modified from a [version](https://github.com/jbub/ghostwriter) created by [Juraj Bubniak](https://github.com/jbub).
+
+### Changes
+
+The following changes have been made to the theme:
+
+  * Typography
+    * set base font to [`Work Sans`](https://fonts.google.com/specimen/Work+Sans)
+    * set post `p` font to [`Taviraj`](https://fonts.google.com/specimen/Taviraj)
+    * set code for to [`Fira Mono`](https://fonts.google.com/specimen/Fira+Mono)
+  
+  * Styling
+    * add box shadow to `pre`
+    * set `pre` and `code` background color to match github-style syntax highlighting 
+    * change to github-style syntax highlighting 
+    
+### Contact
+
+Questions or comments pertaining to this revised version of the theme can be directed to: `tiernan<dot>martin<at>gmail<dot>com`
+
+<hr>
+
+### Installation
 
 Inside the folder of your Hugo site run:
 
@@ -14,7 +36,7 @@ $ git clone https://github.com/jbub/ghostwriter
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
-## Development
+### Development
 
 After installing the theme you need to install javascript dependencies. You can use 
 `npm` or `yarn` to install them from `package.json`. We are using `webpack` to build
@@ -33,7 +55,7 @@ or run `build` to compile the styles:
 yarn run build
 ```
 
-## Example config.toml
+### Example config.toml
 
 To customize your theme you can use following params:
 
