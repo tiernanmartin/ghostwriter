@@ -63,7 +63,7 @@ template { display: none; }
 .hljs-emphasis { font-style: italic; }
 .hljs-strong { font-weight: bold; }
 html, body { height: 100%; }
-body { background: #fefefe; color: #424242; font-family: "Open Sans", arial, sans-serif; font-size: 18px; }
+body { background: #fefefe; color: #424242; font-family: 'Work Sans', sans-serif; font-size: 18px; }
 h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; text-transform: none; }
 h1 { font-size: 26px; }
 h2 { font-size: 24px; }
@@ -83,9 +83,9 @@ img { display: block; margin: 40px 0; width: auto; max-width: 100%; }
 img[src$="align-center"] { margin: auto; }
 img[src$="align-left"] { float: left; margin-right: 40px; }
 img[src$="align-right"] { float: right; margin-left: 40px; }
-pre { background: #f1f0ea; border: 1px solid #dddbcc; border-radius: 3px; margin: 0 0 20px; overflow-x: auto; padding: 10px; font-size: 16px; }
+pre { font-family: 'Fira Mono', monospace; background: #f8f8f8; border: 1px solid #ddd; border-radius: 3px; box-shadow: 5px 5px 5px #eee;margin: 0 0 20px; overflow-x: auto; padding: 10px; font-size: 16px; }
 pre code { padding: 0; }
-code { padding: 2px 4px; font-size: 90%; color: #f03838; background-color: #f1f0ea; border-radius: 4px; }
+code { font-family: 'Fira Mono', monospace; padding: 2px 4px; font-size: 90%; color: #f03838; background-color: #f8f8f8; border-radius: 4px; }
 hr { border: none; border-bottom: 1px dotted #303030; margin: 45px 0; }
 table { margin-bottom: 40px; width: 100%; }
 table tbody > tr:nth-child(odd) > td, table tbody > tr:nth-child(odd) > th { background-color: #f7f7f3; }
@@ -125,6 +125,7 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .post-date a, .blog-description a { color: #aeadad; }
 .post-date a:hover, .blog-description a:hover { color: #f03838; }
 .post-date:after, .blog-description:after { border-bottom: 1px dotted #303030; content: ""; display: block; margin: 40px auto 0; width: 100px; }
+.post-content p {font-family: 'Taviraj', serif;}
 .post-content a:hover { border-bottom: 1px dotted #f03838; padding: 0 0 2px; }
 .post-content:last-child { margin-bottom: 0; }
 .post-content .footnote { border-spacing: 0; margin-bottom: 0; }

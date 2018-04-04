@@ -15,7 +15,7 @@ html, body { height: 100%; }
 body {
     background: $background;
     color: #424242;
-    font-family: "Open Sans", arial, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 18px;
 }
 
@@ -90,9 +90,11 @@ img {
 }
 
 pre {
-    background: #F1F0EA;
-    border: 1px solid #DDDBCC;
+    font-family: 'Fira Mono', monospace;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
     border-radius: 3px;
+    box-shadow: 5px 5px 5px #eee;
     margin: 0 0 20px;
     overflow-x: auto;
     padding: 10px;
@@ -104,10 +106,11 @@ pre {
 }
 
 code {
+    font-family: 'Fira Mono', monospace;
     padding: 2px 4px;
     font-size: 90%;
     color: $primary;
-    background-color: #F1F0EA;
+    background-color: #f8f8f8;
     border-radius: 4px
 }
 
@@ -322,6 +325,9 @@ table {
 }
 
 .post-content {
+    p {
+        font-family: 'Taviraj', serif;
+    }
     a:hover {
         border-bottom: 1px dotted $primary;
         padding: 0 0 2px;

@@ -18,6 +18,7 @@
                 <p class="footer-copyright">
                     <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
                     <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                    <span>/ <a href="https://github.com/tiernanmartin/ghostwriter">Modified</a> By <a href="https://github.com/tiernanmartin">tiernanmartin</a></span>
                 </p>
             </div>
         </footer>
@@ -30,7 +31,8 @@
         {{ else if .Site.Params.highlightJsLocalUrl }}
             <script src="{{ .Site.BaseURL }}{{ .Site.Params.highlightJsLocalUrl }}"></script>
         {{ else }}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+            <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+            <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
         {{ end }}
         
         <script src="{{ .Site.BaseURL }}js/scripts.js"></script>
