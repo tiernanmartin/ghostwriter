@@ -466,8 +466,8 @@ table {
 
 .post-stub-date {
     display: inline-block;
-
-    &:before { content: "/ "; }
+    text-align: right;
+    float: right; 
 }
 
 .next-posts-link a,
