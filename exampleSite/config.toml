@@ -19,13 +19,8 @@ Paginate = 5
     intro = true
     headline = "Ghostwriter example"
     description = "Ghostwriter example description"
-    github = "https://github.com/XXX"
-    gitlab = "https://gitlab.com/XXX"
-    linkedin = "https://linkedin.com/in/XXX/"
-    gplus = "https://google.com/+XXX"
     twitter = "https://twitter.com/XXX"
-    stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
-    email = "XXX@example.com"
+    github = "https://github.com/XXX" 
     opengraph = true
     shareTwitter = false
     shareFacebook = false
@@ -39,18 +34,18 @@ Paginate = 5
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Blog"
+    name = "Latest Post"
     url = "/"
     weight = 1
 
 [[menu.main]]
-    name = "Projects"
-    url = "/project/"
+    name = "Browse Posts"
+    url = "/post/"
     weight = 2
 
 [[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
+    name = "Projects"
+    url = "/project/"
     weight = 3
 
 [[menu.main]]
