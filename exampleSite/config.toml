@@ -5,6 +5,8 @@ languageCode = "en-us"
 copyright = "My Name"
 disqusShortname = "XXX"
 googleAnalytics = "XXX"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+Paginate = 5
 
 [Author]
     name = "My Name"
@@ -25,11 +27,11 @@ googleAnalytics = "XXX"
     stackoverflow = "https://stackoverflow.com/users/XXX/YYY"
     email = "XXX@example.com"
     opengraph = true
-    shareTwitter = true
-    shareFacebook = true
-    shareGooglePlus = true
+    shareTwitter = false
+    shareFacebook = false
+    shareGooglePlus = false
     shareLinkedIn = false
-    dateFormat = "Mon, Jan 2, 2006"
+    dateFormat = "Mon, January 2, 2006"
     highlightJsUrl = ""
     highlightJsLocalUrl = ""
 
