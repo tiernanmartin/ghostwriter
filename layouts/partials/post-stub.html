@@ -1,9 +1,19 @@
 <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <article>
     <a href="{{ .Permalink }}" itemprop="url" title="Go to post detail">
+<<<<<<< HEAD
         <h4 class="post-stub-title" itemprop="name">{{ .Title | truncate 60}}</h4>
         <time class="post-stub-date" datetime="{{ .Date.Format "2006-01-02" }}">Published {{ dateFormat (default "Mon, Jan 2, 2006" .Site.Params.dateFormat) .Date }}</time>
+=======
+        <h4 class="post-stub-title" itemprop="name">{{ .Title }}</h4>
+        {{ if .Description }}
+            <p class="post-stub-description">{{ .Description }}</p>
+        {{ end }}
+        <span class="post-stub-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ dateFormat (default "Mon, Jan 2, 2006" .Site.Params.dateFormat) .Date }}</span>
+>>>>>>> b441ebc9968e17f61379f67bd599deace221b32d
         {{ with .Params.featured }}
             <span class="post-stub-tag">Featured</span>
         {{ end }}
     </a>
+    </article>
 </li>
