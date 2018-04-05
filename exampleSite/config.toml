@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Ghostwriter example"
+title = "Home"
 theme = "ghostwriter"
 languageCode = "en-us"
 copyright = "My Name"
@@ -17,8 +17,8 @@ Paginate = 5
 
 [Params]
     intro = true
-    headline = "Ghostwriter example"
-    description = "Ghostwriter example description"
+    headline = "Title"
+    description = "Description"
     twitter = "https://twitter.com/XXX"
     github = "https://github.com/XXX" 
     opengraph = true
@@ -26,7 +26,7 @@ Paginate = 5
     shareFacebook = false
     shareGooglePlus = false
     shareLinkedIn = false
-    dateFormat = "Mon, January 2, 2006"
+    dateFormat = "January 2, 2006"
     highlightJsUrl = ""
     highlightJsLocalUrl = ""
 
@@ -34,21 +34,16 @@ Paginate = 5
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Latest Post"
-    url = "/"
-    weight = 1
-
-[[menu.main]]
-    name = "Browse Posts"
+    name = "Blog"
     url = "/post/"
-    weight = 2
+    weight = 1
 
 [[menu.main]]
     name = "Projects"
     url = "/project/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 4
+    weight = 3
