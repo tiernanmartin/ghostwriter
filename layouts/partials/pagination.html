@@ -1,7 +1,11 @@
-{{ $pag := $.Paginator }}
+{{ $pag := $.Paginator }}  
+{{if .IsHome }} 
+<a class="newer-posts" href='{{ "/post/" | relURL }}'> Other Posts &rarr;</a>
+{{else}} 
 {{ if gt $pag.TotalPages 1 }}
     <nav class="pagination" role="navigation">
         <span class="page-number">Page {{ $pag.PageNumber }} of {{ $pag.TotalPages }}</span>
+        
         {{ if $pag.HasPrev }}
             <a class="newer-posts" href="{{ $pag.Prev.URL }}">&larr; Newer Posts</a>
         {{ end }}
@@ -9,4 +13,5 @@
             <a class="older-posts" href="{{ $pag.Next.URL }}">Older Posts &rarr;</a>
         {{ end }}
     </nav>
-{{ end }}
+{{ end }} 
+{{ end }} 
