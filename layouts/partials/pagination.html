@@ -1,7 +1,8 @@
-{{ $pag := $.Paginator }}  
-{{if .IsHome }} 
+{{ $pag := $.Paginator }} 
+{{ if gt $pag.TotalNumberOfElements 3 }}
+{{ if .IsHome }} 
 <a class="newer-posts" href='{{ "/post/" | relURL }}'> Other Posts &rarr;</a>
-{{else}} 
+{{ else }} 
 {{ if gt $pag.TotalPages 1 }}
     <nav class="pagination" role="navigation">
         <span class="page-number">Page {{ $pag.PageNumber }} of {{ $pag.TotalPages }}</span>
@@ -15,3 +16,4 @@
     </nav>
 {{ end }} 
 {{ end }} 
+{{ end }}
