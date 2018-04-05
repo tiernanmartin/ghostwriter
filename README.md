@@ -8,6 +8,10 @@ It is a lightly modified from a [version](https://github.com/jbub/ghostwriter) c
 
 The following changes have been made to the theme:
 
+  * Layout
+    * Homepage shows 3 most-recent blog posts and provides link to others
+    * Blog page shows post descriptions and publish dates
+
   * Typography
     * set base font to [`Work Sans`](https://fonts.google.com/specimen/Work+Sans)
     * set post `p` font to [`Taviraj`](https://fonts.google.com/specimen/Taviraj)
