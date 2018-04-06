@@ -3,16 +3,16 @@
 <div id="post-index" class="container">
     {{ partial "intro.html" . }}
 
-    <ol class="post-list">
-        {{ $pag := .Paginate .Data.Pages }}
-        {{ range $pag.Pages }}
-            {{ partial "post-stub.html" . }}
-        {{ end }}
-    </ol>
+{{ range (where .Data.Pages "Section" "post").GroupByDate "2006" }} 
+			<h1 class="post-list-date">{{ .Key }}</h1>
+			<ol class="post-list-archive">
+					{{ range .Pages }}
+					    {{ partial "post-stub.html" . }}
+					{{ end }}
+			</ol> 
+		{{ end }}
 
-    <div class="post-navigation">
-        {{ partial "pagination.html" . }}
-    </div>
+
 </div>
 
 {{ partial "footer.html" . }}
